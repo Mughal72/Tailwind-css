@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@layer Directive in Tailwind</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="mx-4 bg-red-900 text-white">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio quis distinctio tempora iure fugit soluta quo. A amet et obcaecati?
+   </div>
+   <div class="mx-4">
+     <button class="btn">Click me </button>
+   </div>
+  
+
+</body>
+</html>
+<!-- Tailwind will automatically move the CSS within any @layer directive to the same place as the corresponding @tailwind rule, so you don’t have to worry about authoring your CSS in a specific order to avoid specificity issues.
+
+Any custom CSS added to a layer will only be included in the final build if that CSS is actually used in your HTML, just like all of the classes built in to Tailwind by default.
+
+Wrapping any custom CSS with @layer also makes it possible to use modifiers with those rules, like hover: and focus: or responsive modifiers like md: and lg:. 
+
+In Tailwind CSS, the @layer directive indicates which "bucket" a set of custom styles belong to. It can help organize CSS and allows users to create custom classes as part of the three fundamental layers. 
+Valid layers include components, utilities, and base. Tailwind automatically moves any CSS within a @layer directive to the same place as the corresponding @tailwind rule. This means that users don't need to worry about writing their CSS in a specific order to avoid specificity issues. 
+Here's an example of how to use the @layer directive:
+Use the @layer directive
+Copy everything
+Call it btn-test
+Dump it next to apply
+Use all of the stuff that you could do in html
+Save both files
+On the front end, have a new css class called btn.test using all of the tailwind utility styles
+The button should still look the same-->
