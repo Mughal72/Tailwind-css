@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="">
-        this is div 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating Responsive Designs in Tailwind CSS</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Responsive Designs
+The Responsive design practice aims to develop content that adjusts efficiently in a variety of screen sizes. Responsive design refers to an application design that responds to the circumstances in which it is viewed. Responsive web design provides an elegant look to a web page on all devices. Web pages must not leave out the information to fit other devices, instead, their content must adapt according to the screen size. With the help of Breakpoints in Tailwind CSS, one can easily create responsive web pages designs. -->
+    <div class="lg:hidden mx-0 px-1 text-xs sm:text-sm md:text-base lg:text-xl bg-red-900 sm:bg-yellow-500 md:bg-indigo-500 md:text-green-700 lg:bg-green-400 lg:text-black xl:bg-blue-600 text-white">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero non eveniet
+      fuga doloremque voluptatum earum cupiditate, ipsam in provident
+      repudiandae.
     </div>
-</body>
+    <div class="hidden lg:block mx-0 px-1 text-xs sm:text-sm md:text-base lg:text-xl bg-red-900 sm:bg-yellow-500 md:bg-indigo-500 md:text-green-700 lg:bg-green-400 lg:text-black xl:bg-blue-600 text-white">
+      You are on a large screen check this out
+    </div>
+    <!-- 
+Use unprefixed utilities to target mobile, and override them at larger breakpoints -->
+  </body>
 </html>
