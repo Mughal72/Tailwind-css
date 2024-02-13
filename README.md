@@ -1,4 +1,4 @@
-## **Master TaiLwind CSS**
+## **Master Tailwind CSS**
 
 I created this repository to help you learn and practice your skills in Tailwind CSS.
 
