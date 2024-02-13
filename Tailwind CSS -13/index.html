@@ -1,30 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Customizing Tailwind CSS using tailwind.config.js file</title>
-  </head>
-  <body>
-    <div class="mx-4 bg-red-900 text-white my-[3rem] w-[30vw]">
-      Because Tailwind is a framework for building bespoke user interfaces, it has been designed from the ground up with customization in mind.
-
-By default, Tailwind will look for an optional tailwind.config.js file at the root of your project where you can define any customizations.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="xsm:bg-red-500 md:bg-purple-500 mx-4 bg-red-900 text-white">
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt soluta id obcaecati, ut esse assumenda dolorum sequi! Eaque sed harum dolore? Impedit, vitae?
     </div>
-    <div class="mx-13 text-xl">This is mx-13</div>
-  </body>
+    <div class="mx-13 text-10xl">
+        This is tera margin 
+    </div>
+</body>
 </html>
-<!-- Tailwind Configuration
 
-One can use the ‘Tailwind Configuration’ feature to customize the Tailwind CSS according to his/her liking by simply manipulating the configure file of Tailwind CSS. This means that one can add custom values of margin, border, colour, screen breakpoints, colors, etc. Eventually, the Complete control of Tailwind CSS customization properties lies in your hands. 
+<!-- Production Build
+The production build forms the minified bundles of the application with optimized assets to enhance the loading time of the application in the client’s device. Thus, The Production build allows you to deploy the application in a staging environment. 
 
- 
+Initiating the Production
+One can use the Vite to install the application for production. You can easily install Vite by using the ‘npm install Vite’ command. Moreover, In package.json, make sure to add Vite in the build command to start building the application for production 
 
-Scaffolding the default configuration
+Overview - ‘Dist’ Folder
+Eventually, You have to open the dist folder with VS code. After that, Open the application with the help of a live server extension as it launches a development local server with the live reload feature. Remember that all the files, including assets, in the dist folder constitute your website. Now, One can easily deploy the website in Vultr, Digital ocean, Github, Linode etc by submitting the Dist Folder. You can check out our previous tutorial on how to deploy a static website by clicking here.
 
-You can add the complete configuration file, such that it comprises all the Tailwind’s default configuration, in your application by using the below command. In the below example, the name of the configuration file has been set to ‘confHarry’. However, you can swap it with the name you wish to provide to your configuration file.
-
-npx tailwindcss init confHarry --full
-Result: After the execution of the above command, A ‘confHarry’ text file containing the entire default configuration of Tailwind CSS will be created. Let’s understand how one can use this file to customize their Tailwind Configuration. -->
+Overview - ‘Assets’ Folder
+The asset folder includes all the files, such as CSS, JS, image etc in a very neatly minified form. This is so because the files have been optimised for production. These files are optimized in such a way that it consumes the minimum amount of bandwidth of the client while loading and surfing through the website. For example, the CSS file will be extremely minified and only the used utility classes will be available in the CSS file. As a result, the size of the CSS file will decrease considerably. -->
