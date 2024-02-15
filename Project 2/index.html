@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile Cards using Tailwind CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body> 
+    <h1 class="text-xl pt-4 pb-4 text-center font-mono flex justify-center items-center" >
+        <span class="flex items-center">Profile Cards using Tailwind CSS</span>
+    </h1>
+   <div class="container flex h-screen max-w-full flex-row-reverse items-center justify-center gap-8 bg-emerald-500">
+    <div class="card flex h-44 flex-col items-center justify-center rounded-md bg-amber-500 pb-28 pt-28 lg:w-80">
+        <img class="mb-4 h-28 w-28 rounded-full object-cover object-left-top" src="c1.jpg" alt="">
+        <h1 class="text-lg cursor-pointer hover:text-amber-900 text-white font-mono font-bold">John Hanery</h1>
+        <P class="text-sm cursor-pointer hover:text-amber-900 text-black font-mono font-bold">Project Manager</P>
+    </div>
+    <div class="card flex h-44 flex-col items-center justify-center rounded-md bg-amber-500 pb-28 pt-28 lg:w-80">
+        <img class="mb-4 h-28 w-28 rounded-full object-cover object-left-top" src="c2.jpg" alt="">
+        <h1 class="text-lg cursor-pointer hover:text-amber-900 text-white font-mono font-bold">Azukwa Patience</h1>
+        <P class="text-sm cursor-pointer hover:text-amber-900 text-black font-mono font-bold">Marketing Agent</P>
+    </div>
+    <div class="card flex h-44 flex-col items-center justify-center rounded-md bg-amber-500 pb-28 pt-28 lg:w-80">
+        <img class="mb-4 h-28 w-28 rounded-full object-cover object-left-top" src="c3.jpg" alt="">
+        <h1 class="text-lg cursor-pointer hover:text-amber-900 text-white font-mono font-bold">Ali Khan</h1>
+        <P class="text-sm cursor-pointer hover:text-amber-900 text-black font-mono font-bold">Devops Engineer</P>
+    </div>
+
+   </div>
+
+     
+</body>
+</html>
